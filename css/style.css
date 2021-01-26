@@ -6,7 +6,7 @@ body{
     margin-right: 120px;
     columns: 1;
     column-width: 100%;
-    grid-row: 30.3%, 12.3%, 25%, 27.7%, 4.6%;
+    grid-row: auto auto auto auto auto;
     row-gap: 50px;
     margin-bottom: 50px;
     grid-template-areas: 
@@ -15,10 +15,10 @@ body{
         "about"
         "projects"
         "footer"
-        ;
-    
+        ;  
 }
-body{font-family: 'Roboto', sans-serif; }
+body{font-family: 'Roboto', sans-serif; 
+    font-family: 'Schoolbell', cursive;}
 h1{font-family: Roboto;
     font-style: normal;
     font-weight: normal;
@@ -54,6 +54,12 @@ p3{font-family: Roboto;
     font-weight: bold;
     font-size: 20px;
     line-height: 23px;}
+p4{font-family: Schoolbell;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+    color: white;}
 
 /*Header*/
 .header{grid-area: header;
@@ -70,15 +76,33 @@ p3{font-family: Roboto;
 #nav{grid-area: nav;
     }
 #profile{grid-area: profile;}
+#swirlarrow{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    left: 280px;
+    top: 480px;
+}
+#blurb{position: absolute;
+    width: 220px;
+    height: 70px;
+    left: 125px;
+    top: 630px;
+    transform: rotate(6.19deg);
+    text-align: center;}
+#accents{
+    position: absolute;
+    width: 89px;
+    height: 107px;
+    left: 330px;
+    top: 185px; 
+}
 #personalInfo{grid-area: profileInfo;
     text-align:right}
     #homeButton{ 
-
-        /* FIGURE OUT HOW TO GET THIS ON TOP*/
-
         width: 223px;
         height: 55px;
-        left: 0px;
+        left: 10px;
         top: 50px;
         position: absolute;
         }
@@ -105,7 +129,7 @@ p3{font-family: Roboto;
             left: -20px;
             top: 153px;
             
-            background: url(6D4E5845-33E2-4263-9D4A-C2A91C6C634E.jpg);
+            background: url(/Users/meganweaver/Documents/GitHub/UX_UI_HW_17/images/homepage/6D4E5845-33E2-4263-9D4A-C2A91C6C634E.JPG);
             background-position: left(0);
             background-position: top(153);
             background-size: 600px 731px;}
@@ -411,44 +435,51 @@ p3{font-family: Roboto;
         grid-row: auto auto;
         grid-template-areas: "heading2"
         "flexContainer";
+        align-content: top;
+        flex-direction: row;
+        flex-wrap: nowrap;
         }
+       
     #heading2{text-align: left;
-        grid-area: heading2;}
+            grid-area: heading2;}
     .flexContainer{display: flex;
-        grid-area: flexContainer;}
+            grid-area: flexContainer1;
+            align-content: space-between;
+            columns: 33% 33% 33%;
+        }
     #earlyYears{
-        display: inline-block;
-        justify-content: flex-start;
-        width: 33%;
-        }
+            display: inline-block;
+            justify-content: flex-start;
+            width: 33%;}
         #rectangle1{width: 100%;
-            height: 362px;
-            background: #B6BF71;}
+                    height: 362px;
+                    background: #B6BF71;}
     #uiuxDesigner{
-        display: inline-block;
-        justify-content: center;
-        width: 33%;
-        }
+            display: inline-block;
+            justify-content: flex-start;
+            width: 33%;}
         #rectangle2{width: 100%;
-            height: 362px;
-            background: #D8CDDD;}
+                    height: 362px;
+                    background: #D8CDDD;}
     #inspiration{
-        display: inline-block;
-        justify-content: flex-end;
-        width: 33%;}
+            display: inline-block;
+            justify-content: flex-start;
+            width: 33%;}
         #rectangle3{width: 100%;
-            height: 362px;
-            background: #FF6F61;}
+                    height: 362px;
+                    background: #FF6F61;}
 /*Projects*/
 .projects{display:grid;
     grid-area: projects;
     grid-row: auto auto;
     grid-template-areas: "heading3"
-        "flexContainer1";}
+        "flexContainer1";
+    align-content: top;}
     #heading3{text-align: left;
             grid-area: heading3;}
     .flexContainer1{display: flex;
-            grid-area: flexContainer1;}
+            grid-area: flexContainer1;
+        }
     #departmentOfTheInterior{
             display: inline-block;
             justify-content: flex-start;
@@ -459,7 +490,7 @@ p3{font-family: Roboto;
                 background: #F34C1B;}
     #openArmsOfMN{
             display: inline-block;
-            justify-content: center;
+            justify-content: flex-start;
             width: 33%;
             margin-right: 6px;}
         #rectangle5{width: 100%;
@@ -467,7 +498,7 @@ p3{font-family: Roboto;
                 background: #FBA91E;}
     #neutralMobileApp{
             display: inline-block;
-            justify-content: flex-end;
+            justify-content: flex-start;
             width: 33%;}
         #rectangle6{width: 100%;
                 height: 362px;
