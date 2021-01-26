@@ -1,0 +1,478 @@
+/*Document Info*/
+body{
+    display: grid;
+    margin-left: 120px;
+    margin-top: 0px;
+    margin-right: 120px;
+    columns: 1;
+    column-width: 100%;
+    grid-row: 30.3%, 12.3%, 25%, 27.7%, 4.6%;
+    row-gap: 50px;
+    margin-bottom: 50px;
+    grid-template-areas: 
+        "header"
+        "skills"
+        "about"
+        "projects"
+        "footer"
+        ;
+    
+}
+body{font-family: 'Roboto', sans-serif; }
+h1{font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 160px;
+    line-height: 187px;}
+h2{font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 60px;
+    line-height: 70px;}
+h3{font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 30px;}
+h4{font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 30px;}
+p1{font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;}
+p2{font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;}
+p3{font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;}
+
+/*Header*/
+.header{grid-area: header;
+    display: grid;
+    columns: 2;
+    column-width: 50% 50%;
+    grid-row: 75px 305px;
+    position: relative;
+    width: 100%;
+    grid-template-areas: 
+        "nav nav"
+        "profile personalInfo";
+    }
+#nav{grid-area: nav;
+    }
+#profile{grid-area: profile;}
+#personalInfo{grid-area: profileInfo;
+    text-align:right}
+    #homeButton{ 
+
+        /* FIGURE OUT HOW TO GET THIS ON TOP*/
+
+        width: 223px;
+        height: 55px;
+        left: 0px;
+        top: 50px;
+        position: absolute;
+        }
+    #location{position: absolute;
+        width: 223px;
+        height: 55px;
+        right: 0px;
+        top: 50px;
+        text-align: right;}
+    
+    #rectangle{
+        position: absolute;
+        top: 0;
+        left:0;
+        order: 1;
+        height: 100%;
+        width: 390px;
+        background: #FF6F61;}
+    #circle{position: absolute;
+            order: 2;
+            border-radius: 50%;
+            width: 600px;
+            height: 600px;
+            left: -20px;
+            top: 153px;
+            
+            background: url(6D4E5845-33E2-4263-9D4A-C2A91C6C634E.jpg);
+            background-position: left(0);
+            background-position: top(153);
+            background-size: 600px 731px;}
+    #personalInfo{
+        display: flexbox;
+        object-position: right;}
+
+/*Skills*/
+.skills{
+    grid-area: skills;
+    display:grid;
+    grid-row: auto auto auto;
+    grid-template-areas: "skillsrow1"
+    "skillsrow2"
+    "skillsrow3";
+}
+    #skillsrow1{
+        text-align: left;
+        grid-area: skillsrow1;
+        position: top;
+    }
+    #skillsrow2{
+        text-align: center;
+        grid-area: skillsrow2;
+    }
+    #skillsrow3{
+        text-align: center;
+        color: white;
+        line-height: 35px; 
+        ;  
+        
+    }
+    #sketching{ 
+        background-color: #C74375; 
+        border-radius: 20px; 
+        width: auto;
+        height: auto; 
+        padding: 5px 15px 5px 15px; 
+        margin-right: 6px;
+        margin-bottom:6px;
+    }
+    #storyboarding{
+        background-color: #FF6F61; 
+        border-radius: 20px; 
+        width: auto;
+        height: auto; 
+        padding: 5px 15px 5px 15px;
+        margin-right: 6px;
+        margin-bottom:6px;
+    }
+    #UIdesign{
+        background-color: #92A8D1; 
+        border-radius: 20px; 
+        width: auto;
+        height: auto; 
+        padding: 5px 15px 5px 15px;
+        margin-right: 6px;
+        margin-bottom:6px;
+    }
+    #RedLining{
+        background-color: #F0C05A; 
+        border-radius: 20px; 
+        width: auto;
+        height: auto; 
+        padding: 5px 15px 5px 15px;
+        margin-right: 6px;
+        margin-bottom:6px;
+
+    }
+    #UserTesting{
+        background-color: #64A1A4; 
+        border-radius: 20px; 
+        width: auto;
+        height: auto; 
+        padding: 5px 15px 5px 15px;
+        margin-right: 6px;
+        margin-bottom:6px;
+
+    }
+    #UserInterviews{
+        background-color: #C1C5E0; 
+        border-radius: 20px; 
+        width: auto;
+        height: auto; 
+        padding: 5px 15px 5px 15px;
+        margin-right: 6px;
+        margin-bottom:6px;
+
+    }
+    #HTML{
+        background-color: #368E76; 
+        border-radius: 20px; 
+        width: auto;
+        height: auto; 
+        padding: 5px 15px 5px 15px;
+        margin-right: 6px;
+        margin-bottom:6px;
+
+    }
+    #CSS{
+        background-color: #577048; 
+        border-radius: 20px; 
+        width: auto;
+        height: auto; 
+        padding: 5px 15px 5px 15px;
+        margin-right: 6px;
+        margin-bottom:6px;
+
+    }
+    #JavaScript{
+        background-color: #DE413A; 
+        border-radius: 20px; 
+        width: auto;
+        height: auto; 
+        padding: 5px 15px 5px 15px;
+        margin-right: 6px;
+        margin-bottom:6px;
+
+    }
+    #ABTesting{
+        background-color: #5A5B9F; 
+        border-radius: 20px; 
+        width: auto;
+        height: auto; 
+        padding: 5px 15px 5px 15px;
+        margin-right: 6px;
+        margin-bottom:6px;
+
+    }
+    #Branding{
+        background-color: #D94F70; 
+        border-radius: 20px; 
+        width: auto;
+        height: auto; 
+        padding: 5px 15px 5px 15px;
+        margin-right: 6px;
+        margin-bottom:6px;
+
+    }
+    #GitHub{
+        background-color: #233B5D; 
+        border-radius: 20px; 
+        width: auto;
+        height: auto; 
+        padding: 5px 15px 5px 15px;
+        margin-right: 6px;
+        margin-bottom:6px;
+
+    }
+    #BootStrap{
+        background-color: #C26225; 
+        border-radius: 20px; 
+        width: auto;
+        height: auto; 
+        padding: 5px 15px 5px 15px;
+        margin-right: 6px;
+        margin-bottom:6px;
+
+    }
+    #Accessability{
+        background-color: #9B9740; 
+        border-radius: 20px; 
+        width: auto;
+        height: auto; 
+        padding: 5px 15px 5px 15px;
+        margin-right: 6px;
+        margin-bottom:6px;
+
+    }
+    #Surveys{
+        background-color: #7BC4C4; 
+        border-radius: 20px; 
+        width: auto;
+        height: auto; 
+        padding: 5px 15px 5px 15px;
+        margin-right: 6px;
+        margin-bottom:6px;
+
+    }
+    #CardSorting{
+        background-color: #644D43; 
+        border-radius: 20px; 
+        width: auto;
+        height: auto; 
+        padding: 5px 15px 5px 15px;
+        margin-right: 6px;
+        margin-bottom:6px;
+
+    }
+    #Prototyping{
+        background-color: #558583; 
+        border-radius: 20px; 
+        width: auto;
+        height: auto; 
+        padding: 5px 15px 5px 15px;
+        margin-right: 6px;
+        margin-bottom:6px;
+
+    }
+    #Wireframing{
+        background-color: #F0C05A; 
+        border-radius: 20px; 
+        width: auto;
+        height: auto; 
+        padding: 5px 15px 5px 15px;
+        margin-right: 6px;
+        margin-bottom:6px;
+
+    }
+    #Typography{
+        background-color: #F7CAC9; 
+        border-radius: 20px; 
+        width: auto;
+        height: auto; 
+        padding: 5px 15px 5px 15px;
+        margin-right: 6px;
+        margin-bottom:6px;
+
+    }
+    #AdobeXD{
+        background-color: #5B2C36; 
+        border-radius: 20px; 
+        width: auto;
+        height: auto; 
+        padding: 5px 15px 5px 15px;
+        margin-right: 6px;
+        margin-bottom:6px;
+
+    }
+    #Iconography{
+        background-color: #B6BF71; 
+        border-radius: 20px; 
+        width: auto;
+        height: auto; 
+        padding: 5px 15px 5px 15px;
+        margin-right: 6px;
+        margin-bottom:6px;
+
+    }
+    #ResponsiveDesign{
+        background-color: #46748E; 
+        border-radius: 20px; 
+        width: auto;
+        height: auto; 
+        padding: 5px 15px 5px 15px;
+        margin-right: 6px;
+        margin-bottom:6px;
+
+    }
+    #PresentingWork{
+        background-color: #F5BF4D; 
+        border-radius: 20px; 
+        width: auto;
+        height: auto; 
+        padding: 5px 15px 5px 15px;
+        margin-right: 6px;
+        margin-bottom:6px;
+
+    }
+    #EmpathyMap{
+        background-color: #E65F42; 
+        border-radius: 20px; 
+        width: auto;
+        height: auto; 
+        padding: 5px 15px 5px 15px;
+        margin-right: 6px;
+        margin-bottom:6px;
+
+    }
+    #AffinityDiagram{
+        background-color: #64A1A4; 
+        border-radius: 20px; 
+        width: auto;
+        height: auto; 
+        padding: 5px 15px 5px 15px;
+        margin-right: 6px;
+        margin-bottom:6px;
+
+    }
+    #Figma{
+        background-color: #B163A3; 
+        border-radius: 20px; 
+        width: auto;
+        height: auto; 
+        padding: 5px 15px 5px 15px;
+        margin-right: 6px;
+        margin-bottom:6px;
+
+    }
+    #Invision{
+        background-color: #F0C05A; 
+        border-radius: 20px; 
+        width: auto;
+        height: auto; 
+        padding: 5px 15px 5px 15px;
+        margin-right: 6px;
+        margin-bottom:6px;
+    }
+
+/*About*/
+.about{display:grid;
+        grid-area: about;
+        grid-row: auto auto;
+        grid-template-areas: "heading2"
+        "flexContainer";
+        }
+    #heading2{text-align: left;
+        grid-area: heading2;}
+    .flexContainer{display: flex;
+        grid-area: flexContainer;}
+    #earlyYears{
+        display: inline-block;
+        justify-content: flex-start;
+        width: 33%;
+        }
+        #rectangle1{width: 100%;
+            height: 362px;
+            background: #B6BF71;}
+    #uiuxDesigner{
+        display: inline-block;
+        justify-content: center;
+        width: 33%;
+        }
+        #rectangle2{width: 100%;
+            height: 362px;
+            background: #D8CDDD;}
+    #inspiration{
+        display: inline-block;
+        justify-content: flex-end;
+        width: 33%;}
+        #rectangle3{width: 100%;
+            height: 362px;
+            background: #FF6F61;}
+/*Projects*/
+.projects{display:grid;
+    grid-area: projects;
+    grid-row: auto auto;
+    grid-template-areas: "heading3"
+        "flexContainer1";}
+    #heading3{text-align: left;
+            grid-area: heading3;}
+    .flexContainer1{display: flex;
+            grid-area: flexContainer1;}
+    #departmentOfTheInterior{
+            display: inline-block;
+            justify-content: flex-start;
+            width: 33%;
+            margin-right: 6px;}
+        #rectangle4{width: 100%;
+                height: 362px;
+                background: #F34C1B;}
+    #openArmsOfMN{
+            display: inline-block;
+            justify-content: center;
+            width: 33%;
+            margin-right: 6px;}
+        #rectangle5{width: 100%;
+                height: 362px;
+                background: #FBA91E;}
+    #neutralMobileApp{
+            display: inline-block;
+            justify-content: flex-end;
+            width: 33%;}
+        #rectangle6{width: 100%;
+                height: 362px;
+                background: #C9D8DF;}
+
+/*Footer*/
+.footer{grid-area: footer;
+    text-align: right;}
