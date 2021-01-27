@@ -435,32 +435,34 @@ p4{font-family: Schoolbell;
         grid-row: auto auto;
         grid-template-areas: "heading2"
         "flexContainer";
-        align-content: top;
         }
        
     #heading2{text-align: left;
             grid-area: heading2;}
     .flexContainer{display: flex;
             grid-area: flexContainer;
+
         }
     #earlyYears{
-            display: inline-block;
-            justify-content: flex-start;
+            float: left;
+            margin-right: 6px;
             width: 33%;}
         #rectangle1{width: 100%;
                     height: 362px;
                     background: #B6BF71;}
     #uiuxDesigner{
             display: inline-block;
-            justify-content: flex-start;
-            width: 33%;}
+            width: 33%;
+            vertical-align: top;
+            }
         #rectangle2{width: 100%;
                     height: 362px;
                     background: #D8CDDD;}
     #inspiration{
-            display: inline-block;
-            justify-content: flex-start;
-            width: 33%;}
+            float: right;
+            width: 33%;
+            vertical-align: top;
+            margin-left: 2px;}
         #rectangle3{width: 100%;
                     height: 362px;
                     background: #FF6F61;}
@@ -478,7 +480,6 @@ p4{font-family: Schoolbell;
         }
     #departmentOfTheInterior{
             display: inline-block;
-            justify-content: flex-start;
             width: 33%;
             margin-right: 6px;}
         #rectangle4{width: 100%;
@@ -486,7 +487,6 @@ p4{font-family: Schoolbell;
                 background: #F34C1B;}
     #openArmsOfMN{
             display: inline-block;
-            justify-content: flex-start;
             width: 33%;
             margin-right: 6px;}
         #rectangle5{width: 100%;
@@ -494,7 +494,6 @@ p4{font-family: Schoolbell;
                 background: #FBA91E;}
     #neutralMobileApp{
             display: inline-block;
-            justify-content: flex-start;
             width: 33%;}
         #rectangle6{width: 100%;
                 height: 362px;
