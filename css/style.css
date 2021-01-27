@@ -83,11 +83,20 @@ p4{font-family: Schoolbell;
     }
 #profile{grid-area: profile;}
 #swirlarrow{
+    animation: swirlArrow 3s;
     position: absolute;
     width: 200px;
     height: 200px;
     left: 280px;
     top: 480px;
+}
+@keyframes swirlArrow{
+    0% {transform: rotate(10deg)}
+    20% {transform: rotate(0deg)}
+    40% {transform: rotate(10deg)}
+    60% {transform: rotate(0deg)}
+    80% {transform: rotate(10deg)}
+    100% {transform: rotate(0deg)}
 }
 #blurb{position: absolute;
     width: 220px;
@@ -97,11 +106,19 @@ p4{font-family: Schoolbell;
     transform: rotate(6.19deg);
     text-align: center;}
 #accents{
+    animation: growAccent 3s;
     position: absolute;
     width: 89px;
     height: 107px;
     left: 330px;
     top: 185px; 
+}
+@keyframes growAccent{
+    0% {transform: scale(1)}
+    25% {transform: scale(1.25)}
+    50% {transform: scale(1)}
+    75% {transform: scale(1.25)}
+    100% {transform: scale(1)}
 }
 #personalInfo{grid-area: profileInfo;
     text-align:right}
