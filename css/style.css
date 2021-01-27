@@ -436,16 +436,12 @@ p4{font-family: Schoolbell;
         grid-template-areas: "heading2"
         "flexContainer";
         align-content: top;
-        flex-direction: row;
-        flex-wrap: nowrap;
         }
        
     #heading2{text-align: left;
             grid-area: heading2;}
     .flexContainer{display: flex;
-            grid-area: flexContainer1;
-            align-content: space-between;
-            columns: 33% 33% 33%;
+            grid-area: flexContainer;
         }
     #earlyYears{
             display: inline-block;
